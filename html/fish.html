@@ -4,5 +4,30 @@
 	</head>
 
 	<body>
+		<script>
+			var start = function(processing) { with (processing) {
+				//
+				//  BEGIN PROCESSING ENVIRONMENT
+				//
+
+
+				setup = function () {
+					size(400, 400);
+
+				}
+
+
+
+				draw = function () {
+				}
+
+
+				//
+				// END PROCESSING ENVIRONMENT
+				//
+			}};
+			var canvas = document.getElementById('canvas1');
+			new Processing(canvas, start);
+		</script>
 	</body>
 </html>
