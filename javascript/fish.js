@@ -33,11 +33,16 @@ var drawFish = function (x, y, length, height, color2, tailWidth, tailColor, eye
     ellipse(centerX+bodyLength/4, centerY, eyeSize, eyeSize);
 };
 
+var movement = 0;
+
+
 draw = function () {
     background(89, 216, 255);
     drawFish(270, 200, 80, 40, color(224, 38, 112), 20, color(217, 162, 21), 10);
-    drawFish(200, 300, 160, 40, color(120, 141, 204), 60, color(245, 22, 245), 25);
+    drawFish(movement, 300, 160, 40, color(120, 141, 204), 60, color(245, 22, 245), 25);
     drawFish(240, 80, 230, 60, color(49, 176, 42), 80, color(9, 0, 255), 40);
+
+    movement = movement + 1 
 }
 
 
