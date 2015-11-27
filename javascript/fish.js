@@ -7,12 +7,8 @@ var setup = function () {
     size(400,400);
 }
 
-var drawFish = function (x, y, length, height, color2, tailWidth, tailColor, eyeSize) {
+var drawFish = function (centerX, centerY, bodyLength, bodyHeight, color2, tailWidth, tailColor, eyeSize) {
 
-    var centerX = x;
-    var centerY = y;
-    var bodyLength = length;
-    var bodyHeight = height;
 
 
     noStroke();
