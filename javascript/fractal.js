@@ -6,7 +6,7 @@ size(800, 400);
 
 draw = function () {
 	//background(20, 133, 100);
-	stroke(mouseX / 2, 50, 50);
+	stroke(mouseX / 4, mouseY / 2, (mouseX / mouseY) * 100);
 	line(200, 200, mouseX, mouseY);
 
 };
