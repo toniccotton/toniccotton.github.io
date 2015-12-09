@@ -5,7 +5,9 @@ var start = function(processing) { with (processing) {
 size(400, 400);
 
 draw = function () {
-	background(fill (20, 133, 100));
+	background(20, 133, 100);
+
+	line(200, 200, mouseX, mouseY);
 
 };
 
