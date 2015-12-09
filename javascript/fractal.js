@@ -2,11 +2,12 @@ var start = function(processing) { with (processing) {
 //
 // BEGIN PROCESSING ENVIRONMENT
 //
-
+size(400, 400);
 
 draw = function () {
+	background(fill (20, 133, 100));
 
-}
+};
 
 
 //
