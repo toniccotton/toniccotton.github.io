@@ -8,6 +8,7 @@ var clickCount = 1;
 var backgroundColors = [color(255, 20, 147), color(20, 70, 150), color(10, 10, 3)];
 background(backgroundColors[0])
 
+
 mouseClicked = function () {
 	background(backgroundColors[clickCount])
 		
@@ -24,6 +25,7 @@ draw = function () {
 	//noStroke();
 	fill(mouseX / 4, mouseY / 2, (mouseX / mouseY) * 100, 125);
 	ellipse(mouseX, mouseY, 40, 40);
+
 
 };
 
