@@ -35,5 +35,5 @@ draw = function () {
 // END PROCESSING ENVIRONMENT
 //
 }};
-var canvas = document.getElementById('canvas1');
+var canvas = document.getElementById('canvas2');
 new Processing(canvas, start);
