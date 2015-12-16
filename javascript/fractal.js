@@ -9,10 +9,10 @@ var backgroundColors = [color(255, 20, 147), color(20, 70, 150), color(10, 10, 3
 background(backgroundColors[0])
 
 var drawShape = function () {
-	ellipse(mouseX, mouseY, 40, 40);
-	ellipse(mouseY, mouseX, 40, 40);
-	ellipse(800 - mouseY, 800 - mouseX, 40, 40);
-	ellipse(800 - mouseX, 800 -  mouseY, 40, 40);
+	line(mouseX, mouseY, pmouseX, pmouseY);
+	line(mouseY, mouseX, pmouseY, pmouseX);
+	line(800 - mouseY, 800 - mouseX, pmouseX, pmouseY);
+	line(800 - mouseX, 800 -  mouseY, pmouseY, pmouseX);
 };
 
 mouseClicked = function () {
