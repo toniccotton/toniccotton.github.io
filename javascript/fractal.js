@@ -30,6 +30,7 @@ draw = function () {
 	
 	//noStroke();
 	stroke(mouseX / 4, mouseY / 2, (mouseX / mouseY) * 100, 125);
+	strokeWeight(20);
 
 	drawShape();		
 
