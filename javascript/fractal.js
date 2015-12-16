@@ -11,8 +11,8 @@ background(backgroundColors[0])
 var drawShape = function () {
 	line(mouseX, mouseY, pmouseX, pmouseY);
 	line(mouseY, mouseX, pmouseY, pmouseX);
-	line(800 - mouseY, 800 - mouseX, pmouseX, pmouseY);
-	line(800 - mouseX, 800 -  mouseY, pmouseY, pmouseX);
+	line(800 - mouseY, 800 - mouseX, 800 - pmouseY, 800 - pmouseX);
+	line(800 - mouseX, 800 -  mouseY, 800 - pmouseX, 800 - pmouseY);
 };
 
 mouseClicked = function () {
@@ -29,7 +29,7 @@ mouseClicked = function () {
 draw = function () {
 	
 	//noStroke();
-	fill(mouseX / 4, mouseY / 2, (mouseX / mouseY) * 100, 125);
+	stroke(mouseX / 4, mouseY / 2, (mouseX / mouseY) * 100, 125);
 
 	drawShape();		
 
