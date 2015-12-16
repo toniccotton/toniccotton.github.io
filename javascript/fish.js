@@ -27,20 +27,37 @@ var drawFish = function (centerX, centerY, bodyLength, bodyHeight, color2, tailW
     ellipse(centerX+bodyLength/4, centerY, eyeSize, eyeSize);
 };
 
-var movement = 0;
+var movement1 = -180;
+var movement2 = -210;
+var movement3 = -150;
 
-draw = function () {
-    // draw water
-    background(89, 216, 255);
+// draw = function () {
+//     // draw water
+//     background(89, 216, 255);
 
-    // draw fish
-    drawFish(270, 200, 80, 40, color(224, 38, 112), 20, color(217, 162, 21), 10);
-    drawFish(movement, 300, 160, 40, color(120, 141, 204), 60, color(245, 22, 245), 25);
-    drawFish(240, 80, 230, 60, color(49, 176, 42), 80, color(9, 0, 255), 40);
+//     // draw fish
+//     drawFish(movement1, 80, 230, 60, color(49, 176, 42), 80, color(9, 0, 255), 40);
+//     drawFish(movement2, 200, 80, 40, color(224, 38, 112), 20, color(217, 162, 21), 10);
+//     drawFish(movement3, 300, 160, 40, color(120, 141, 204), 60, color(245, 22, 245), 25);
 
-    // increment movement by 1
-    movement = movement + 1 
-}
+//     // increment movement by 1
+//     movement1 = movement1 + 1 
+//     movement2 = movement2 + 2
+//     movement3 = movement3 + 1.5
+
+//      if (movement1 > 850) {
+//         movement1 = -180
+//     }       
+
+//      if (movement2 > 550) {
+//         movement2 = -210
+//     }
+
+//     if (movement3 > 600) {
+//         movement3 = -150
+//     }
+
+// };
 
 
 //

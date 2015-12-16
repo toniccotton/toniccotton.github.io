@@ -2,12 +2,18 @@ var start = function(processing) { with (processing) {
 //
 // BEGIN PROCESSING ENVIRONMENT
 //
-size(800, 400);
+size(800, 800);
 
 var clickCount = 1;
 var backgroundColors = [color(255, 20, 147), color(20, 70, 150), color(10, 10, 3)];
 background(backgroundColors[0])
 
+var drawShape = function () {
+	ellipse(mouseX, mouseY, 40, 40);
+	ellipse(mouseY, mouseX, 40, 40);
+	ellipse(800 - mouseY, 800 - mouseX, 40, 40);
+	ellipse(800 - mouseX, 800 -  mouseY, 40, 40);
+};
 
 mouseClicked = function () {
 	background(backgroundColors[clickCount])
@@ -24,10 +30,12 @@ draw = function () {
 	
 	//noStroke();
 	fill(mouseX / 4, mouseY / 2, (mouseX / mouseY) * 100, 125);
-	ellipse(mouseX, mouseY, 40, 40);
 
+	drawShape();		
 
 };
+
+
 
 
 
