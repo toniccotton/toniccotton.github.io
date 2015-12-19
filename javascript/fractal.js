@@ -15,7 +15,7 @@ var drawShape = function () {
 	line(800 - mouseX, 800 -  mouseY, 800 - pmouseX, 800 - pmouseY);
 };
 
-mouseClicked = function () {
+keyPressed = function () {
 	background(backgroundColors[clickCount])
 		
 	clickCount = clickCount + 1;
@@ -26,7 +26,7 @@ mouseClicked = function () {
 
 };
 
-draw = function () {
+mouseDragged = function () {
 	
 	//noStroke();
 	stroke(mouseX / 4, mouseY / 2, (mouseX / mouseY) * 100, 125);
