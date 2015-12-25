@@ -11,6 +11,9 @@ img, canvas {
 	border-color: #6B6B6B;
 	border-radius: 42px;
 	outline: none;
+}
 
-
+a {
+	display: block;
+	text-align: center;
 }
