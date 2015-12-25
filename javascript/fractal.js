@@ -15,10 +15,10 @@ var backgroundColors = [
 background(backgroundColors[0])
 
 var drawShape = function () {
-	line(mouseX, mouseY, pmouseX, pmouseY);
-	line(mouseY, mouseX, pmouseY, pmouseX);
-	line(800 - mouseY, 800 - mouseX, 800 - pmouseY, 800 - pmouseX);
-	line(800 - mouseX, 800 -  mouseY, 800 - pmouseX, 800 - pmouseY);
+	ellipse(mouseX, mouseY, 40, 40);
+	ellipse(mouseY, mouseX, 40, 40);
+	ellipse(800 - mouseY, 800 - mouseX, 40, 40);
+	ellipse(800 - mouseX, 800 -  mouseY, 40, 40);
 };
 
 keyPressed = function () {
@@ -33,8 +33,7 @@ keyPressed = function () {
 
 mouseDragged = function () {
 	//noStroke();
-	stroke(mouseX / 4, mouseY / 2, (mouseX / mouseY) * 100, 125);
-	strokeWeight(20);
+	fill(mouseX / 4, mouseY / 2, (mouseX / mouseY) * 100, 125);
 
 	drawShape();		
 };
