@@ -44,5 +44,5 @@ mouseDragged = function () {
 // END PROCESSING ENVIRONMENT
 //
 }};
-var canvas = document.getElementById('canvas2');
+var canvas = document.getElementById('canvas1');
 new Processing(canvas, start);
