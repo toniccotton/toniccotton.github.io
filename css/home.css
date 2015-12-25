@@ -9,5 +9,6 @@ img, canvas {
 	border-style: solid;
 	border-width: 8px;
 	border-color: #6B6B6B;
+	outline: none;
 
 }

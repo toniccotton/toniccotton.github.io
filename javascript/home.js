@@ -8,9 +8,9 @@ size(600, 600);
 
 var clickCount = 1;
 var backgroundColors = [
+	color(10, 10, 3),
 	color(255, 20, 147), 
-	color(20, 70, 150), 
-	color(10, 10, 3)
+	color(20, 70, 150) 
 ];
 
 var circleSize = 30;
